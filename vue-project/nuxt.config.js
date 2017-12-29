@@ -23,5 +23,11 @@ module.exports = {
   /*
   ** Build configuration
   */
-  transition: 'page'
+  build: {
+    vendor: ['axios'],
+    publicPath: '/',
+    babel: {
+      presets: ['es2016', 'stage-0']
+    }
+  }
 }
